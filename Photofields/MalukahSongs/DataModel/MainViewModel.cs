@@ -105,7 +105,7 @@ namespace MalukahSongs.DataModel
             {
                 string json = "";
 
-                json = await MakeWebRequest();
+                json = await MakeWebRequest(this.page);
 
                 try
                 {
@@ -114,6 +114,7 @@ namespace MalukahSongs.DataModel
                 catch { };
 
                 JObject o = JObject.Parse(json.ToString());
+                this.maxpage = Int32.Parse(o["total_pages"].ToString());
                 _items = JsonConvert.DeserializeObject<ObservableCollection<ItemViewModel>>(o["photos"].ToString());
 
                 this.LoadImages();
@@ -126,10 +127,13 @@ namespace MalukahSongs.DataModel
             App.ViewModel.OnDataLoad(EventArgs.Empty);
         }
 
-        public async Task<string> MakeWebRequest()
+        public int page = 1;
+        public int maxpage = 1;
+
+        public async Task<string> MakeWebRequest(int page = 1)
         {
                 HttpClient http = new System.Net.Http.HttpClient();
-                HttpResponseMessage response = await http.GetAsync("https://api.500px.com/v1/photos?feature=popular&consumer_key=p8aR16yK5W78IDe2ZQtuRj44oflT4ldphFzkcKPL&&image_size=3");
+                HttpResponseMessage response = await http.GetAsync("https://api.500px.com/v1/photos?feature=popular&consumer_key=p8aR16yK5W78IDe2ZQtuRj44oflT4ldphFzkcKPL&&image_size=3&page="+page.ToString());
                 return await response.Content.ReadAsStringAsync();
             
         }

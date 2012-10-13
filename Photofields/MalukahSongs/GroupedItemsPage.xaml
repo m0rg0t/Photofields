@@ -25,6 +25,14 @@
             />
         <!-- d:Source="{Binding Items, Source={d:DesignInstance Type=data:SampleDataSource, IsDesignTimeCreatable=True}}" -->
     </Page.Resources>
+	<common:LayoutAwarePage.BottomAppBar>
+		<AppBar>
+            <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+			<Button HorizontalAlignment="Right" Name="Previous" Style="{StaticResource PreviousAppBarButtonStyle}" Click="Previous_Click"/>
+            <Button HorizontalAlignment="Right" Name="Next" Style="{StaticResource NextAppBarButtonStyle}" Click="Next_Click" />
+            </StackPanel>
+		</AppBar>
+	</common:LayoutAwarePage.BottomAppBar>
 
     <!--
         Эта сетка выступает в роли корневой области страницы и определяет две строки:

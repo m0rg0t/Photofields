@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="43337m0rg0t.Malukahsongs" Publisher="CN=F7642D27-CCE9-4988-9BED-35B1F14EED65" Version="1.0.0.1" />
+  <Identity Name="43337m0rg0t.Photofields" Publisher="CN=F7642D27-CCE9-4988-9BED-35B1F14EED65" Version="1.0.0.2" />
   <Properties>
-    <DisplayName>Malukah songs</DisplayName>
+    <DisplayName>Photofields</DisplayName>
     <PublisherDisplayName>m0rg0t</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -15,8 +15,8 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="MalukahSongs.App">
-      <VisualElements DisplayName="Malukah songs" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="MalukahSongs" ForegroundText="light" BackgroundColor="#464646">
-        <DefaultTile ShowName="allLogos" ShortName="Malukah songs" />
+      <VisualElements DisplayName="Photofields" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="Photofields" ForegroundText="light" BackgroundColor="#464646">
+        <DefaultTile ShowName="allLogos" ShortName="Photofields" />
         <SplashScreen Image="Assets\SplashScreen.png" />
         <InitialRotationPreference>
           <Rotation Preference="landscape" />

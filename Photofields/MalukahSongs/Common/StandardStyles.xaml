@@ -1639,6 +1639,751 @@
         </Setter>
     </Style>
 
+
+
+    <Style x:Key="SkipBackAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="SkipBackAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Skip Back"/>
+        <Setter Property="Content" Value="&#xE100;"/>
+    </Style>
+    <Style x:Key="SkipAheadAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="SkipAheadAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Skip Ahead"/>
+        <Setter Property="Content" Value="&#xE101;"/>
+    </Style>
+    <Style x:Key="PlayAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="PlayAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Play"/>
+        <Setter Property="Content" Value="&#xE102;"/>
+    </Style>
+    <Style x:Key="PauseAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="PauseAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Pause"/>
+        <Setter Property="Content" Value="&#xE103;"/>
+    </Style>
+    <Style x:Key="EditAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="EditAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Edit"/>
+        <Setter Property="Content" Value="&#xE104;"/>
+    </Style>
+    <Style x:Key="SaveAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="SaveAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Save"/>
+        <Setter Property="Content" Value="&#xE105;"/>
+    </Style>
+    <Style x:Key="DeleteAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="DeleteAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Delete"/>
+        <Setter Property="Content" Value="&#xE106;"/>
+    </Style>
+    <Style x:Key="DiscardAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="DiscardAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Discard"/>
+        <Setter Property="Content" Value="&#xE107;"/>
+    </Style>
+    <Style x:Key="RemoveAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="RemoveAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Remove"/>
+        <Setter Property="Content" Value="&#xE108;"/>
+    </Style>
+    <Style x:Key="AddAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="AddAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Add"/>
+        <Setter Property="Content" Value="&#xE109;"/>
+    </Style>
+    <Style x:Key="NoAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="NoAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="No"/>
+        <Setter Property="Content" Value="&#xE10A;"/>
+    </Style>
+    <Style x:Key="YesAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="YesAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Yes"/>
+        <Setter Property="Content" Value="&#xE10B;"/>
+    </Style>
+    <Style x:Key="MoreAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="MoreAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="More"/>
+        <Setter Property="Content" Value="&#xE10C;"/>
+    </Style>
+    <Style x:Key="RedoAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="RedoAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Redo"/>
+        <Setter Property="Content" Value="&#xE10D;"/>
+    </Style>
+    <Style x:Key="UndoAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="UndoAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Undo"/>
+        <Setter Property="Content" Value="&#xE10E;"/>
+    </Style>
+    <Style x:Key="HomeAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="HomeAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Home"/>
+        <Setter Property="Content" Value="&#xE10F;"/>
+    </Style>
+    <Style x:Key="OutAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="OutAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Out"/>
+        <Setter Property="Content" Value="&#xE110;"/>
+    </Style>
+    <Style x:Key="NextAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="NextAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Next"/>
+        <Setter Property="Content" Value="&#xE111;"/>
+    </Style>
+    <Style x:Key="PreviousAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="PreviousAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Previous"/>
+        <Setter Property="Content" Value="&#xE112;"/>
+    </Style>
+    <Style x:Key="FavoriteAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="FavoriteAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Favorite"/>
+        <Setter Property="Content" Value="&#xE113;"/>
+    </Style>
+    <Style x:Key="PhotoAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="PhotoAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Photo"/>
+        <Setter Property="Content" Value="&#xE114;"/>
+    </Style>
+    <Style x:Key="SettingsAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="SettingsAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Settings"/>
+        <Setter Property="Content" Value="&#xE115;"/>
+    </Style>
+    <Style x:Key="VideoAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="VideoAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Video"/>
+        <Setter Property="Content" Value="&#xE116;"/>
+    </Style>
+    <Style x:Key="RefreshAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="RefreshAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Refresh"/>
+        <Setter Property="Content" Value="&#xE117;"/>
+    </Style>
+    <Style x:Key="DownloadAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="DownloadAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Download"/>
+        <Setter Property="Content" Value="&#xE118;"/>
+    </Style>
+    <Style x:Key="MailAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="MailAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Mail"/>
+        <Setter Property="Content" Value="&#xE119;"/>
+    </Style>
+    <Style x:Key="SearchAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="SearchAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Search"/>
+        <Setter Property="Content" Value="&#xE11A;"/>
+    </Style>
+    <Style x:Key="HelpAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="HelpAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Help"/>
+        <Setter Property="Content" Value="&#xE11B;"/>
+    </Style>
+    <Style x:Key="UploadAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="UploadAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Upload"/>
+        <Setter Property="Content" Value="&#xE11C;"/>
+    </Style>
+    <Style x:Key="EmojiAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="EmojiAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Emoji"/>
+        <Setter Property="Content" Value="&#xE11D;"/>
+    </Style>
+    <Style x:Key="TwoPageAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="TwoPageAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Two Page"/>
+        <Setter Property="Content" Value="&#xE11E;"/>
+    </Style>
+    <Style x:Key="LeaveChatAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="LeaveChatAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Upload"/>
+        <Setter Property="Content" Value="&#xE11F;"/>
+    </Style>
+    <Style x:Key="MailForwardAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="MailForwardAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Forward Mail"/>
+        <Setter Property="Content" Value="&#xE120;"/>
+    </Style>
+    <Style x:Key="ClockAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="ClockAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Clock"/>
+        <Setter Property="Content" Value="&#xE121;"/>
+    </Style>
+    <Style x:Key="SendAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="SendAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Send"/>
+        <Setter Property="Content" Value="&#xE122;"/>
+    </Style>
+    <Style x:Key="CropAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="CropAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Crop"/>
+        <Setter Property="Content" Value="&#xE123;"/>
+    </Style>
+    <Style x:Key="RotateCameraAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="RotateCameraAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Rotate Camera"/>
+        <Setter Property="Content" Value="&#xE124;"/>
+    </Style>
+    <Style x:Key="PeopleAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="PeopleAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="People"/>
+        <Setter Property="Content" Value="&#xE125;"/>
+    </Style>
+    <Style x:Key="ClosePaneAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="ClosePaneAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Close Pane"/>
+        <Setter Property="Content" Value="&#xE126;"/>
+    </Style>
+    <Style x:Key="OpenPaneAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="OpenPaneAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Open Pane"/>
+        <Setter Property="Content" Value="&#xE127;"/>
+    </Style>
+    <Style x:Key="WorldAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="WorldAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="World"/>
+        <Setter Property="Content" Value="&#xE128;"/>
+    </Style>
+    <Style x:Key="FlagAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="FlagAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Flag"/>
+        <Setter Property="Content" Value="&#xE129;"/>
+    </Style>
+    <Style x:Key="PreviewLinkAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="PreviewLinkAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Preview Link"/>
+        <Setter Property="Content" Value="&#xE12A;"/>
+    </Style>
+    <Style x:Key="GlobeAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="GlobeAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Globe"/>
+        <Setter Property="Content" Value="&#xE12B;"/>
+    </Style>
+    <Style x:Key="TrimAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="TrimAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Trim"/>
+        <Setter Property="Content" Value="&#xE12C;"/>
+    </Style>
+    <Style x:Key="AttachCameraAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="AttachCameraAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Attach Camera"/>
+        <Setter Property="Content" Value="&#xE12D;"/>
+    </Style>
+    <Style x:Key="ZoomInAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="ZoomInAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Zoom In"/>
+        <Setter Property="Content" Value="&#xE12E;"/>
+    </Style>
+    <Style x:Key="BookmarksAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="BookmarksAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Bookmarks"/>
+        <Setter Property="Content" Value="&#xE12F;"/>
+    </Style>
+    <Style x:Key="DocumentAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="DocumentAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Document"/>
+        <Setter Property="Content" Value="&#xE130;"/>
+    </Style>
+    <Style x:Key="ProtectedDocumentAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="ProtectedDocumentAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Protected Document"/>
+        <Setter Property="Content" Value="&#xE131;"/>
+    </Style>
+    <Style x:Key="PageAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="PageAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Page"/>
+        <Setter Property="Content" Value="&#xE132;"/>
+    </Style>
+    <Style x:Key="BulletsAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="BulletsAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Bullets"/>
+        <Setter Property="Content" Value="&#xE133;"/>
+    </Style>
+    <Style x:Key="CommentAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="CommentAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Comment"/>
+        <Setter Property="Content" Value="&#xE134;"/>
+    </Style>
+    <Style x:Key="Mail2AppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="Mail2AppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Mail2"/>
+        <Setter Property="Content" Value="&#xE135;"/>
+    </Style>
+    <Style x:Key="ContactInfoAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="ContactInfoAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Contact Info"/>
+        <Setter Property="Content" Value="&#xE136;"/>
+    </Style>
+    <Style x:Key="HangUpAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="HangUpAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Hang Up"/>
+        <Setter Property="Content" Value="&#xE137;"/>
+    </Style>
+    <Style x:Key="ViewAllAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="ViewAllAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="View All"/>
+        <Setter Property="Content" Value="&#xE138;"/>
+    </Style>
+    <Style x:Key="MapPinAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="MapPinAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Map Pin"/>
+        <Setter Property="Content" Value="&#xE139;"/>
+    </Style>
+    <Style x:Key="PhoneAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="PhoneAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Phone"/>
+        <Setter Property="Content" Value="&#xE13A;"/>
+    </Style>
+    <Style x:Key="VideoChatAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="VideoChatAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Video Chat"/>
+        <Setter Property="Content" Value="&#xE13B;"/>
+    </Style>
+    <Style x:Key="SwitchAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="SwitchAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Switch"/>
+        <Setter Property="Content" Value="&#xE13C;"/>
+    </Style>
+    <Style x:Key="ContactAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="ContactAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Contact"/>
+        <Setter Property="Content" Value="&#xE13D;"/>
+    </Style>
+    <Style x:Key="RenameAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="RenameAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Rename"/>
+        <Setter Property="Content" Value="&#xE13E;"/>
+    </Style>
+    <Style x:Key="PinAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="PinAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Pin"/>
+        <Setter Property="Content" Value="&#xE141;"/>
+    </Style>
+    <Style x:Key="MusicInfoAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="MusicInfoAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Music Info"/>
+        <Setter Property="Content" Value="&#xE142;"/>
+    </Style>
+    <Style x:Key="GoAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="GoAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Go"/>
+        <Setter Property="Content" Value="&#xE143;"/>
+    </Style>
+    <Style x:Key="KeyboardAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="KeyboardAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Keyboard"/>
+        <Setter Property="Content" Value="&#xE144;"/>
+    </Style>
+    <Style x:Key="DockLeftAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="DockLeftAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Dock Left"/>
+        <Setter Property="Content" Value="&#xE145;"/>
+    </Style>
+    <Style x:Key="DockRightAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="DockRightAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Dock Right"/>
+        <Setter Property="Content" Value="&#xE146;"/>
+    </Style>
+    <Style x:Key="DockBottomAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="DockBottomAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Dock Bottom"/>
+        <Setter Property="Content" Value="&#xE147;"/>
+    </Style>
+    <Style x:Key="RemoteAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="RemoteAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Remote"/>
+        <Setter Property="Content" Value="&#xE148;"/>
+    </Style>
+    <Style x:Key="SyncAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="SyncAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Sync"/>
+        <Setter Property="Content" Value="&#xE149;"/>
+    </Style>
+    <Style x:Key="RotateAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="RotateAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Rotate"/>
+        <Setter Property="Content" Value="&#xE14A;"/>
+    </Style>
+    <Style x:Key="ShuffleAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="ShuffleAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Shuffle"/>
+        <Setter Property="Content" Value="&#xE14B;"/>
+    </Style>
+    <Style x:Key="ListAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="ListAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="List"/>
+        <Setter Property="Content" Value="&#xE14C;"/>
+    </Style>
+    <Style x:Key="ShopAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="ShopAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Shop"/>
+        <Setter Property="Content" Value="&#xE14D;"/>
+    </Style>
+    <Style x:Key="SelectAllAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="SelectAllAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Select All"/>
+        <Setter Property="Content" Value="&#xE14E;"/>
+    </Style>
+    <Style x:Key="OrientationAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="OrientationAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Orientation"/>
+        <Setter Property="Content" Value="&#xE14F;"/>
+    </Style>
+    <Style x:Key="ImportAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="ImportAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Import"/>
+        <Setter Property="Content" Value="&#xE150;"/>
+    </Style>
+    <Style x:Key="ImportAllAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="ImportAllAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="ImportAll"/>
+        <Setter Property="Content" Value="&#xE151;"/>
+    </Style>
+    <Style x:Key="BrowsePhotosAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="BrowsePhotosAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Browse Photos"/>
+        <Setter Property="Content" Value="&#xE155;"/>
+    </Style>
+    <Style x:Key="WebcamAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="WebcamAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Webcam"/>
+        <Setter Property="Content" Value="&#xE156;"/>
+    </Style>
+    <Style x:Key="PicturesAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="PicturesAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Pictures"/>
+        <Setter Property="Content" Value="&#xE158;"/>
+    </Style>
+    <Style x:Key="SaveLocalAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="SaveLocalAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Save Local"/>
+        <Setter Property="Content" Value="&#xE159;"/>
+    </Style>
+    <Style x:Key="CaptionAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="CaptionAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Caption"/>
+        <Setter Property="Content" Value="&#xE15A;"/>
+    </Style>
+    <Style x:Key="StopAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="StopAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Stop"/>
+        <Setter Property="Content" Value="&#xE15B;"/>
+    </Style>
+    <Style x:Key="ShowResultsAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="ShowResultsAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Show Results"/>
+        <Setter Property="Content" Value="&#xE15C;"/>
+    </Style>
+    <Style x:Key="VolumeAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="VolumeAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Volume"/>
+        <Setter Property="Content" Value="&#xE15D;"/>
+    </Style>
+    <Style x:Key="RepairAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="RepairAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Repair"/>
+        <Setter Property="Content" Value="&#xE15E;"/>
+    </Style>
+    <Style x:Key="MessageAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="MessageAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Message"/>
+        <Setter Property="Content" Value="&#xE15F;"/>
+    </Style>
+    <Style x:Key="Page2AppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="Page2AppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Page2"/>
+        <Setter Property="Content" Value="&#xE160;"/>
+    </Style>
+    <Style x:Key="CalendarDayAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="CalendarDayAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Day"/>
+        <Setter Property="Content" Value="&#xE161;"/>
+    </Style>
+    <Style x:Key="CalendarWeekAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="CalendarWeekAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Week"/>
+        <Setter Property="Content" Value="&#xE162;"/>
+    </Style>
+    <Style x:Key="CalendarAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="CalendarAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Calendar"/>
+        <Setter Property="Content" Value="&#xE163;"/>
+    </Style>
+    <Style x:Key="CharactersAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="CharactersAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Characters"/>
+        <Setter Property="Content" Value="&#xE164;"/>
+    </Style>
+    <Style x:Key="MailReplyAllAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="MailReplyAllAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Reply All"/>
+        <Setter Property="Content" Value="&#xE165;"/>
+    </Style>
+    <Style x:Key="ReadAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="ReadAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Read"/>
+        <Setter Property="Content" Value="&#xE166;"/>
+    </Style>
+    <Style x:Key="LinkAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="LinkAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Link"/>
+        <Setter Property="Content" Value="&#xE167;"/>
+    </Style>
+    <Style x:Key="AccountsAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="AccountsAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Accounts"/>
+        <Setter Property="Content" Value="&#xE168;"/>
+    </Style>
+    <Style x:Key="ShowBccAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="ShowBccAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Show Bcc"/>
+        <Setter Property="Content" Value="&#xE169;"/>
+    </Style>
+    <Style x:Key="HideBccAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="HideBccAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Hide Bcc"/>
+        <Setter Property="Content" Value="&#xE16A;"/>
+    </Style>
+    <Style x:Key="CutAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="CutAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Cut"/>
+        <Setter Property="Content" Value="&#xE16B;"/>
+    </Style>
+    <Style x:Key="AttachAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="AttachAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Attach"/>
+        <Setter Property="Content" Value="&#xE16C;"/>
+    </Style>
+    <Style x:Key="PasteAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="PasteAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Paste"/>
+        <Setter Property="Content" Value="&#xE16D;"/>
+    </Style>
+    <Style x:Key="FilterAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="FilterAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Filter"/>
+        <Setter Property="Content" Value="&#xE16E;"/>
+    </Style>
+    <Style x:Key="CopyAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="CopyAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Copy"/>
+        <Setter Property="Content" Value="&#xE16F;"/>
+    </Style>
+    <Style x:Key="Emoji2AppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="Emoji2AppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Emoji"/>
+        <Setter Property="Content" Value="&#xE170;"/>
+    </Style>
+    <Style x:Key="ImportantAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="ImportantAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Important"/>
+        <Setter Property="Content" Value="&#xE171;"/>
+    </Style>
+    <Style x:Key="MailReplyAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="MailReplyAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Reply"/>
+        <Setter Property="Content" Value="&#xE172;"/>
+    </Style>
+    <Style x:Key="SlideShowAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="SlideShowAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Slideshow"/>
+        <Setter Property="Content" Value="&#xE173;"/>
+    </Style>
+    <Style x:Key="SortAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="SortAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Sort"/>
+        <Setter Property="Content" Value="&#xE174;"/>
+    </Style>
+    <Style x:Key="ContactPresenceAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="ContactPresenceAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Presence"/>
+        <Setter Property="Content" Value="&#xE181;"/>
+    </Style>
+    <Style x:Key="PriorityAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="PriorityAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Priority"/>
+        <Setter Property="Content" Value="&#xE182;"/>
+    </Style>
+    <Style x:Key="UploadSkyDriveAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="UploadSkyDriveAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Skydrive"/>
+        <Setter Property="Content" Value="&#xE183;"/>
+    </Style>
+    <Style x:Key="GoToTodayAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="GoToTodayAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Today"/>
+        <Setter Property="Content" Value="&#xE184;"/>
+    </Style>
+    <Style x:Key="FontAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="FontAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Font"/>
+        <Setter Property="Content" Value="&#xE185;"/>
+    </Style>
+    <Style x:Key="FontColorAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="FontColorAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Font Color"/>
+        <Setter Property="Content" Value="&#xE186;"/>
+    </Style>
+    <Style x:Key="Contact2AppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="Contact2AppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Contact"/>
+        <Setter Property="Content" Value="&#xE187;"/>
+    </Style>
+    <Style x:Key="FolderppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="FolderAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Folder"/>
+        <Setter Property="Content" Value="&#xE188;"/>
+    </Style>
+    <Style x:Key="AudioAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="AudioAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Audio"/>
+        <Setter Property="Content" Value="&#xE189;"/>
+    </Style>
+    <Style x:Key="PlaceholderAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="PlaceholderAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Placeholder"/>
+        <Setter Property="Content" Value="&#xE18A;"/>
+    </Style>
+    <Style x:Key="ViewAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="ViewAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="View"/>
+        <Setter Property="Content" Value="&#xE18B;"/>
+    </Style>
+    <Style x:Key="SetLockScreenAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="SetLockscreenAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Set Lockscreen"/>
+        <Setter Property="Content" Value="&#xE18C;"/>
+    </Style>
+    <Style x:Key="SetTitleAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="SetTitleAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Set Title"/>
+        <Setter Property="Content" Value="&#xE18D;"/>
+    </Style>
+    <Style x:Key="CcAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="CcAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Cc"/>
+        <Setter Property="Content" Value="&#xE190;"/>
+    </Style>
+    <Style x:Key="StopSlideShowAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="StopSlideshowAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Stop Slideshow"/>
+        <Setter Property="Content" Value="&#xE191;"/>
+    </Style>
+    <Style x:Key="PermissionsAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="PermissionsAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Permisions"/>
+        <Setter Property="Content" Value="&#xE192;"/>
+    </Style>
+    <Style x:Key="HighlightAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="HighlightAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Highlight"/>
+        <Setter Property="Content" Value="&#xE193;"/>
+    </Style>
+    <Style x:Key="DisableUpdatesAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="DisableUpdatesAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Disable Updates"/>
+        <Setter Property="Content" Value="&#xE194;"/>
+    </Style>
+    <Style x:Key="UnfavoriteAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="UnfavoriteAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Unfavorite"/>
+        <Setter Property="Content" Value="&#xE195;"/>
+    </Style>
+    <Style x:Key="UnPinAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="UnPinAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Unpin"/>
+        <Setter Property="Content" Value="&#xE196;"/>
+    </Style>
+    <Style x:Key="OpenLocalAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="OpenLocalAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Open Loal"/>
+        <Setter Property="Content" Value="&#xE197;"/>
+    </Style>
+    <Style x:Key="MuteAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="MuteAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Mute"/>
+        <Setter Property="Content" Value="&#xE198;"/>
+    </Style>
+    <Style x:Key="ItalicAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="ItalicAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Italic"/>
+        <Setter Property="Content" Value="&#xE199;"/>
+    </Style>
+    <Style x:Key="UnderlineAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="UnderlineAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Underline"/>
+        <Setter Property="Content" Value="&#xE19A;"/>
+    </Style>
+    <Style x:Key="BoldAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="BoldAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Bold"/>
+        <Setter Property="Content" Value="&#xE19B;"/>
+    </Style>
+    <Style x:Key="MoveToFolderAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="MoveToFolderAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Move to Folder"/>
+        <Setter Property="Content" Value="&#xE19C;"/>
+    </Style>
+    <Style x:Key="LikeDislikeAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="LikeDislikeAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Like/Dislike"/>
+        <Setter Property="Content" Value="&#xE19D;"/>
+    </Style>
+    <Style x:Key="DislikeAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="DislikeAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Dislike"/>
+        <Setter Property="Content" Value="&#xE19E;"/>
+    </Style>
+    <Style x:Key="LikeAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="LikeAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Like"/>
+        <Setter Property="Content" Value="&#xE19F;"/>
+    </Style>
+    <Style x:Key="AlignRightAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="AlignRightAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Align Right"/>
+        <Setter Property="Content" Value="&#xE1A0;"/>
+    </Style>
+    <Style x:Key="AlignCenterAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="AlignCenterAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Align Center"/>
+        <Setter Property="Content" Value="&#xE1A1;"/>
+    </Style>
+    <Style x:Key="AlignLeftAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="AlignLeftAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Align Left"/>
+        <Setter Property="Content" Value="&#xE1A2;"/>
+    </Style>
+    <Style x:Key="ZoomAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="ZoomAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Zoom"/>
+        <Setter Property="Content" Value="&#xE1A3;"/>
+    </Style>
+    <Style x:Key="ZoomOutAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="ZoomOutAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Zoom Out"/>
+        <Setter Property="Content" Value="&#xE1A4;"/>
+    </Style>
+    <Style x:Key="OpenFileAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="OpenFileAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Open File"/>
+        <Setter Property="Content" Value="&#xE1A5;"/>
+    </Style>
+    <Style x:Key="OtherUserAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="OtherUserAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Other User"/>
+        <Setter Property="Content" Value="&#xE1A6;"/>
+    </Style>
+    <Style x:Key="AdminAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="AdminAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Admin"/>
+        <Setter Property="Content" Value="&#xE1A7;"/>
+    </Style>
+
+
+
     <!-- Шаблоны элементов -->
 
     <!-- Совместимый с сеткой 250-пиксельный шаблон квадратного элемента, как на странице GroupedItemsPage и ItemsPage -->

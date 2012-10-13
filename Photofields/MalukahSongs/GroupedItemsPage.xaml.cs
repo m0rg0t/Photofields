@@ -130,7 +130,7 @@ namespace MalukahSongs
                 });
                 args.Request.ApplicationCommands.Add(viewAboutPage);
 
-                var viewAboutMalukahPage = new SettingsCommand("", "About Malukah", cmd =>
+               /* var viewAboutMalukahPage = new SettingsCommand("", "About Malukah", cmd =>
                 {
                     var settingsFlyout = new SettingsFlyout();
                     settingsFlyout.Content = new AboutMalukah();
@@ -138,9 +138,35 @@ namespace MalukahSongs
 
                     settingsFlyout.IsOpen = true;
                 });
-                args.Request.ApplicationCommands.Add(viewAboutMalukahPage);
+                args.Request.ApplicationCommands.Add(viewAboutMalukahPage);*/
             }
             catch { };
+        }
+
+        private void Next_Click(object sender, RoutedEventArgs e)
+        {
+            if (App.ViewModel.maxpage > App.ViewModel.page)
+            {
+                App.ViewModel.page++;
+
+                this.Loading.IsIndeterminate = true;
+                this.Loading.Visibility = Visibility.Visible;
+
+                App.ViewModel.LoadData();
+            };
+        }
+
+        private void Previous_Click(object sender, RoutedEventArgs e)
+        {
+            if (App.ViewModel.page > 1)
+            {
+                App.ViewModel.page--;
+
+                this.Loading.IsIndeterminate = true;
+                this.Loading.Visibility = Visibility.Visible;
+
+                App.ViewModel.LoadData();
+            };
         }
 
 

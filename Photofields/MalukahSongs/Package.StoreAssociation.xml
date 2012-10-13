@@ -350,29 +350,18 @@
     <Language Code="zu-za" InMinimumRequirementSet="false" />
   </SupportedLocales>
   <ProductReservedInfo>
-    <MainPackageIdentityName>43337m0rg0t.Malukahsongs</MainPackageIdentityName>
+    <MainPackageIdentityName>43337m0rg0t.Photofields</MainPackageIdentityName>
     <ReservedNames>
-      <ReservedName>Malukah songs</ReservedName>
+      <ReservedName>Photofields</ReservedName>
     </ReservedNames>
   </ProductReservedInfo>
   <AccountPackageIdentityNames>
     <MainPackageIdentityName>43337m0rg0t.BlackSilverUfaletsplays</MainPackageIdentityName>
     <MainPackageIdentityName>43337m0rg0t.GodvilleSimpleMonitor</MainPackageIdentityName>
+    <MainPackageIdentityName>43337m0rg0t.JackShepard</MainPackageIdentityName>
+    <MainPackageIdentityName>43337m0rg0t.Malukahsongs</MainPackageIdentityName>
     <MainPackageIdentityName>43337m0rg0t.61938D133BA94</MainPackageIdentityName>
     <MainPackageIdentityName>43337m0rg0t.544352BC4813B</MainPackageIdentityName>
   </AccountPackageIdentityNames>
-  <PackageInfoList LandingUrl="https://appdev.microsoft.com:443/StorePortals/Developer/Catalog/ReleaseAnchor/7f5c7214-cec2-490c-bb58-3e0e5c7adee6">
-    <PackageInfo>
-      <PackageArchitecture>x64</PackageArchitecture>
-      <PackageMaxArchitectureVersion>1.0.0.0</PackageMaxArchitectureVersion>
-    </PackageInfo>
-    <PackageInfo>
-      <PackageArchitecture>x86</PackageArchitecture>
-      <PackageMaxArchitectureVersion>1.0.0.0</PackageMaxArchitectureVersion>
-    </PackageInfo>
-    <PackageInfo>
-      <PackageArchitecture>arm</PackageArchitecture>
-      <PackageMaxArchitectureVersion>1.0.0.0</PackageMaxArchitectureVersion>
-    </PackageInfo>
-  </PackageInfoList>
+  <PackageInfoList LandingUrl="https://appdev.microsoft.com:443/StorePortals/Developer/Catalog/ReleaseAnchor/8781d3d9-a07d-46e2-8b15-1164339195a1" />
 </StoreAssociation>
