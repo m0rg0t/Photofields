@@ -5,10 +5,15 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
+using Windows.Storage.Streams;
 using Windows.System;
 using Windows.UI.ApplicationSettings;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -66,14 +71,66 @@ namespace MalukahSongs
         /// <param name="e">Данные о событии, описывающие нажатый элемент.</param>
         async void ItemView_ItemClick(object sender, ItemClickEventArgs e)
         {
-            // Переход к соответствующей странице назначения и настройка новой страницы
-            // путем передачи необходимой информации в виде параметра навигации
-            //var itemId = ((SampleDataItem)e.ClickedItem).UniqueId;
-            //this.Frame.Navigate(typeof(ItemDetailPage), itemId);
-
-            //WebBrowserTask web = new WebBrowserTask();
-            await Launcher.LaunchUriAsync(new Uri("http://500px.com/photo/"+((ItemViewModel)e.ClickedItem).Id.ToString()));
+            SaveAsImageInPicturesLibrary((ItemViewModel)e.ClickedItem);
+            //await Launcher.LaunchUriAsync(new Uri("http://500px.com/photo/"+((ItemViewModel)e.ClickedItem).Id.ToString()));
         }
+
+        private async void SaveAsImageInPicturesLibrary(ItemViewModel item)
+        {
+            if (true)
+            {
+                var client = new HttpClient();
+                HttpRequestMessage request = new
+                    HttpRequestMessage(HttpMethod.Get, item.Image_url.Replace("/3.jpg", "/4.jpg"));
+                var response = await client.
+                    SendAsync(request, HttpCompletionOption.ResponseHeadersRead);
+
+                //var filename = item.Image_url.Substring(item.Image_url.LastIndexOf('/') + 1);
+                Guid photoID = System.Guid.NewGuid();
+                var filename = photoID.ToString() + ".jpg";
+                //var filename = Path.GetFileName(item.Image_url);
+                Task<StorageFile> task =
+                    GetFileIfExistsAsync(KnownFolders.PicturesLibrary, filename);
+                StorageFile file = await task;
+
+                if (file == null)
+                {
+                    var imageFile = await KnownFolders.PicturesLibrary.
+                        CreateFileAsync(filename, CreationCollisionOption.ReplaceExisting);
+                    var fs = await imageFile.OpenAsync(FileAccessMode.ReadWrite);
+                    var writer = new DataWriter(fs.GetOutputStreamAt(0));
+
+                    writer.WriteBytes(await response.Content.ReadAsByteArrayAsync());
+
+                    await writer.StoreAsync();
+                    writer.DetachStream();
+                    await fs.FlushAsync();
+
+                    var dialog = new MessageDialog("The image is successfully saved in \"Pictures Library\".",
+                        "Saving Image");
+                    await dialog.ShowAsync();
+                }
+                else
+                {
+                    var dialog = new MessageDialog("The image is already saved in \"Pictures Library\".",
+                        "Saving Image");
+                    await dialog.ShowAsync();
+                }
+            }
+        }
+
+        public static async Task<StorageFile> GetFileIfExistsAsync(StorageFolder folder, string fileName)
+        {
+            try
+            {
+                return await folder.GetFileAsync(fileName);
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
 
         private void Grid_Loaded_1(object sender, RoutedEventArgs e)
         {
