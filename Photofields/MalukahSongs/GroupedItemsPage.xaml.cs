@@ -180,22 +180,22 @@ namespace MalukahSongs
                 {
                     //(Window.Current.Content as Frame).Navigate(typeof(AboutPage));
                     var settingsFlyout = new SettingsFlyout();
-                    settingsFlyout.Content = new About();
+                    settingsFlyout.Content = new Privacy();
                     settingsFlyout.HeaderText = "About";
 
                     settingsFlyout.IsOpen = true;
                 });
                 args.Request.ApplicationCommands.Add(viewAboutPage);
 
-               /* var viewAboutMalukahPage = new SettingsCommand("", "About Malukah", cmd =>
+                var viewAboutMalukahPage = new SettingsCommand("", "Privacy policy", cmd =>
                 {
                     var settingsFlyout = new SettingsFlyout();
-                    settingsFlyout.Content = new AboutMalukah();
-                    settingsFlyout.HeaderText = "About Malukah";
+                    settingsFlyout.Content = new Privacy();
+                    settingsFlyout.HeaderText = "Privacy policy";
 
                     settingsFlyout.IsOpen = true;
                 });
-                args.Request.ApplicationCommands.Add(viewAboutMalukahPage);*/
+                args.Request.ApplicationCommands.Add(viewAboutMalukahPage);
             }
             catch { };
         }

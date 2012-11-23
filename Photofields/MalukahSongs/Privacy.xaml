@@ -1,0 +1,55 @@
+﻿<UserControl
+    x:Class="MalukahSongs.Privacy"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MalukahSongs"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+    
+    <Grid>
+        <StackPanel Grid.Row="1" Margin="40">
+            <TextBlock HorizontalAlignment="Left" Foreground="Black"
+		Margin="0,5" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource BodyTextStyle}" Text="
+This privacy document explains how information you provide to the application are used."/>
+            <TextBlock HorizontalAlignment="Left" Foreground="Black"
+		Margin="0,5" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource BodyTextStyle}" Text="
+Data collected automatically
+The application does not collect any data without your knowledge."/>
+            <TextBlock HorizontalAlignment="Left" Foreground="Black"
+		Margin="0,5" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource BodyTextStyle}" Text="
+Using collected information
+Any collected data will not be transferred or sold to any third-parties."/>
+            <TextBlock HorizontalAlignment="Left" Foreground="Black"
+		Margin="0,5" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource BodyTextStyle}" Text="
+Protecting data
+The application does not collect or store information that is linked to a specific name. We also we make every effort to secure stored data.
+We store data in a database which is protected against access by third parts."/>
+
+            <TextBlock HorizontalAlignment="Left" Foreground="Black"
+		Margin="0,5" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource BodyTextStyle}" Text="
+Data changes
+If you changed the data by the means of which we have contacted you, you can provide us with new data to contact you.
+"/>
+
+<TextBlock HorizontalAlignment="Left" Foreground="Black"
+Margin="0,5" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource BodyTextStyle}" Text="
+Contacting you
+If you asked us a question, we may contact you by e-mail, phone or post in order to answer it."/>
+
+<TextBlock HorizontalAlignment="Left" Foreground="Black"
+Margin="0,5" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource BodyTextStyle}" Text="
+Your consent
+By accepting the Terms which incorporate this policy you consent to this privacy policy. Thereafter, ongoing use of this application constitutes
+your consent to the Terms and this Privacy Policy, as modified from time to time."/>
+
+<TextBlock HorizontalAlignment="Left" Foreground="Black"
+Margin="0,5" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource BodyTextStyle}" Text="
+Contact
+Contact to the data collector: m0rg0t.Anton@gmail.com"/>
+
+        </StackPanel>
+    </Grid>
+</UserControl>

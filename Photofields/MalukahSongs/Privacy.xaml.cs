@@ -16,9 +16,9 @@ using Windows.UI.Xaml.Navigation;
 
 namespace MalukahSongs
 {
-    public sealed partial class AboutMalukah : UserControl
+    public sealed partial class Privacy : UserControl
     {
-        public AboutMalukah()
+        public Privacy()
         {
             this.InitializeComponent();
         }
