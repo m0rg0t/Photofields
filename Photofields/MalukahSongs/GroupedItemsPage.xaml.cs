@@ -226,6 +226,11 @@ namespace MalukahSongs
             };
         }
 
+        private void itemGridView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
 
     }
 }

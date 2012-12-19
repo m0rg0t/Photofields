@@ -54,10 +54,10 @@
             Padding="116,137,40,46"
             ItemsSource="{Binding Source={StaticResource groupedItemsViewSource}}"
             ItemTemplate="{StaticResource Standard250x250ItemTemplate}"
-            SelectionMode="None"
+            SelectionMode="Single"
             IsSwipeEnabled="false"
             IsItemClickEnabled="True"
-            ItemClick="ItemView_ItemClick">
+            ItemClick="ItemView_ItemClick" SelectionChanged="itemGridView_SelectionChanged">
         </GridView>
 
         <!-- Список с вертикальной прокруткой используется только в прикрепленном представлении -->
