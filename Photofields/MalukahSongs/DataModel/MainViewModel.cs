@@ -28,7 +28,25 @@ namespace MalukahSongs.DataModel
             try
             {
                 string json = (string)roamingSettings.Values["tracks"];
-                _items = JsonConvert.DeserializeObject<ObservableCollection<ItemViewModel>>(json);
+                // LoadData stores the complete API envelope, not a photos array.
+                if (!String.IsNullOrEmpty(json))
+                {
+                    JObject cached = JObject.Parse(json);
+                    var photos = cached["photos"];
+                    if (photos != null)
+                    {
+                        _items = JsonConvert.DeserializeObject<ObservableCollection<ItemViewModel>>(photos.ToString())
+                            ?? new ObservableCollection<ItemViewModel>();
+                    }
+
+                    int cachedPage;
+                    var currentPage = cached["current_page"];
+                    if (currentPage != null && Int32.TryParse(currentPage.ToString(), out cachedPage) && cachedPage > 0)
+                        this.page = cachedPage;
+                    var totalPages = cached["total_pages"];
+                    if (totalPages != null && Int32.TryParse(totalPages.ToString(), out cachedPage) && cachedPage > 0)
+                        this.maxpage = cachedPage;
+                }
 
             }
             catch { };
@@ -150,3 +168,4 @@ namespace MalukahSongs.DataModel
         }
     }
 }
+
